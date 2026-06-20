@@ -1,3 +1,7 @@
+// Import GSAP and ScrollTrigger from npm package
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 // Register GSAP ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
