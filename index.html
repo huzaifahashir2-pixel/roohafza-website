@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooh Afza | The Sweet Nectar of the East</title>
+    <meta name="description" content="Experience the refreshing legacy of Rooh Afza through an interactive, scroll-controlled journey and customized drink mixer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="bottle-loader-wrapper">
+                <div class="bottle-outline">
+                    <div class="bottle-liquid" id="loader-liquid"></div>
+                </div>
+            </div>
+            <h2 class="loader-title">Distilling Herbs...</h2>
+            <div class="loader-percentage" id="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-accent">ROOH</span>AFZA
+        </div>
+        <nav class="nav-menu">
+            <a href="#hero" class="nav-link active">Home</a>
+            <a href="#heritage" class="nav-link">Heritage</a>
+            <a href="#ingredients" class="nav-link">Ingredients</a>
+            <a href="#mixer" class="nav-link">Mixer</a>
+        </nav>
+        <div class="header-actions">
+            <a href="#mixer" class="btn btn-primary btn-sm">Mix a Drink</a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-container">
+                <h2 class="hero-subtitle">SINCE 1906</h2>
+                <h1 class="hero-title">The Sweet <br><span class="highlight">Nectar</span> of the East</h1>
+                <p class="hero-description">
+                    A blend of pure herbal distillates, cooling fruits, and aromatic roses. Experience a century of refreshing heritage in every drop.
+                </p>
+                <div class="scroll-indicator">
+                    <span>Scroll to Unbottle</span>
+                    <div class="arrow-down"><i class="fa-solid fa-chevron-down"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll Animation Section (Sequence) -->
+        <section id="heritage" class="sequence-section">
+            <div class="sequence-wrapper">
+                <!-- Sticky Canvas Container -->
+                <div class="sequence-sticky">
+                    <canvas id="sequence-canvas"></canvas>
+                    
+                    <!-- Overlay Story Cards -->
+                    <div class="story-overlay">
+                        <div class="story-card active" data-frame="0">
+                            <span class="card-tag">A Legacy is Born</span>
+                            <h3 class="card-title">Crafted in Delhi</h3>
+                            <p class="card-text">
+                                Formulated in 1906 by Hakim Hafiz Abdul Majeed, Rooh Afza was created to combat the scorching summer winds of Northern India.
+                            </p>
+                        </div>
+                        
+                        <div class="story-card" data-frame="4">
+                            <span class="card-tag">Artisanal Distillation</span>
+                            <h3 class="card-title">Nature's Essence</h3>
+                            <p class="card-text">
+                                Combining the cooling powers of rose, coriander, water lily, and mint. Every bottle is a symphony of natural herbal alchemy.
+                            </p>
+                        </div>
+                        
+                        <div class="story-card" data-frame="8">
+                            <span class="card-tag">Universal Cooling</span>
+                            <h3 class="card-title">A Sip of Memories</h3>
+                            <p class="card-text">
+                                From family dinners to celebratory feasts, it remains the ultimate companion for milkshakes, ice cream, and festive drinks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ingredients Showcase Section -->
+        <section id="ingredients" class="ingredients-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">THE SECRET FORMULA</span>
+                    <h2 class="section-title">Natural Ingredients</h2>
+                    <p class="section-description">
+                        Rooh Afza is made from a unique recipe of botanical ingredients, carefully selected for their refreshing and therapeutic cooling properties.
+                    </p>
+                </div>
+
+                <div class="ingredients-grid">
+                    <!-- Ingredient 1 -->
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon-wrapper">
+                            <div class="ingredient-icon"><i class="fa-solid fa-seedling"></i></div>
+                        </div>
+                        <h3 class="ingredient-name">Rose (Gul-e-Surkh)</h3>
+                        <p class="ingredient-desc">Provides the signature deep-red hue and floral aroma, offering immediate mental refreshment and cardiac cooling.</p>
+                    </div>
+
+                    <!-- Ingredient 2 -->
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon-wrapper">
+                            <div class="ingredient-icon"><i class="fa-solid fa-leaf"></i></div>
+                        </div>
+                        <h3 class="ingredient-name">Mint (Pudina)</h3>
+                        <p class="ingredient-desc">Infuses a burst of crisp coolness that aids digestion, cools the stomach, and alleviates heat exhaustion.</p>
+                    </div>
+
+                    <!-- Ingredient 3 -->
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon-wrapper">
+                            <div class="ingredient-icon"><i class="fa-solid fa-fan"></i></div>
+                        </div>
+                        <h3 class="ingredient-name">Kewra (Screw Pine)</h3>
+                        <p class="ingredient-desc">An exotic distillate that delivers an enchanting scent and serves as an ancient remedy for heat strokes.</p>
+                    </div>
+
+                    <!-- Ingredient 4 -->
+                    <div class="ingredient-card">
+                        <div class="ingredient-icon-wrapper">
+                            <div class="ingredient-icon"><i class="fa-solid fa-droplet"></i></div>
+                        </div>
+                        <h3 class="ingredient-name">Water Lily (Neelofar)</h3>
+                        <p class="ingredient-desc">Renowned in traditional Unani medicine for regulating body temperature and soothing internal heat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Drink Mixer Section -->
+        <section id="mixer" class="mixer-section">
+            <div class="section-container">
+                <div class="mixer-grid">
+                    
+                    <!-- Mixer UI Controls -->
+                    <div class="mixer-controls-panel">
+                        <span class="section-subtitle">THE MIXOLOGY LAB</span>
+                        <h2 class="section-title">Mix Your Cooler</h2>
+                        <p class="mixer-intro">
+                            Adjust the ratios below to create your signature Rooh Afza refreshment and discover its name.
+                        </p>
+                        
+                        <div class="control-group">
+                            <label class="control-label">Base Liquid</label>
+                            <div class="base-selector">
+                                <button type="button" class="base-btn active" data-base="water">
+                                    <i class="fa-solid fa-glass-water"></i> Water
+                                </button>
+                                <button type="button" class="base-btn" data-base="milk">
+                                    <i class="fa-solid fa-cow"></i> Milk
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="slider-header">
+                                <span class="control-label">Rooh Afza Syrup</span>
+                                <span class="slider-value" id="syrup-val">20%</span>
+                            </div>
+                            <input type="range" id="syrup-slider" min="0" max="100" value="20" class="custom-slider">
+                        </div>
+
+                        <div class="control-group row-group">
+                            <div class="toggle-control">
+                                <span class="control-label">Add Ice Cubes</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="ice-toggle" checked>
+                                    <span class="slider-toggle"></span>
+                                </label>
+                            </div>
+                            
+                            <div class="toggle-control">
+                                <span class="control-label">Mint Garnish</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="mint-toggle">
+                                    <span class="slider-toggle"></span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mixer-actions">
+                            <button id="stir-btn" class="btn btn-outline btn-full">
+                                <i class="fa-solid fa-rotate"></i> Stir Drink
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Glass Visualizer -->
+                    <div class="mixer-visualizer-panel">
+                        <div class="glass-container">
+                            <div class="glass-body">
+                                <!-- Liquid Element -->
+                                <div class="glass-liquid-wrapper">
+                                    <div class="glass-liquid" id="drink-liquid">
+                                        <!-- Bubbles or stir animations inside liquid -->
+                                        <div class="stir-overlay-wave" id="stir-wave"></div>
+                                        <div class="ice-cubes" id="ice-container">
+                                            <div class="ice-cube cube-1"></div>
+                                            <div class="ice-cube cube-2"></div>
+                                            <div class="ice-cube cube-3"></div>
+                                        </div>
+                                        <div class="mint-leaves" id="mint-container">
+                                            <div class="mint-leaf leaf-1"></div>
+                                            <div class="mint-leaf leaf-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Glass reflection highlight -->
+                                <div class="glass-highlight"></div>
+                            </div>
+                            <div class="glass-base"></div>
+                        </div>
+
+                        <!-- Live Drink Recipe Card -->
+                        <div class="recipe-card" id="recipe-card">
+                            <h4 class="recipe-name" id="recipe-name">Rose Sharbatee</h4>
+                            <p class="recipe-desc" id="recipe-desc">A classic refreshing summer cooler. Mildly sweet, deeply aromatic, and incredibly hydrating.</p>
+                            <div class="recipe-stats">
+                                <span id="stat-sweetness"><i class="fa-solid fa-cubes"></i> Sweetness: Medium</span>
+                                <span id="stat-temp"><i class="fa-solid fa-snowflake"></i> Chilled</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo"><span class="logo-accent">ROOH</span>AFZA</div>
+                <p class="footer-tagline">Quenching trusts and refreshing souls since 1906.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Explore</h4>
+                    <a href="#hero">Home</a>
+                    <a href="#heritage">Heritage</a>
+                    <a href="#ingredients">Ingredients</a>
+                    <a href="#mixer">Mixer</a>
+                </div>
+                <div class="link-group">
+                    <h4>Community</h4>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rooh Afza Fan Club. For presentation and educational purposes only.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP & ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom Application Code -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
